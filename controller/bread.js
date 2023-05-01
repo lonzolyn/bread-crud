@@ -2,8 +2,8 @@ const router = require('express').Router()
 const Bread = require('../models/bread')
 
 //get all breads
-router.get('/', (req,res) =>{
-    res.send('Bread')
+router.get('/', (req,res) => {
+    res.send(Bread)
 })
 
 //get bread a specific bread by index
