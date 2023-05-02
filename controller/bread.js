@@ -9,10 +9,15 @@ router.get('/', (req,res) => {
     
 })
 
+
 //get bread a specific bread by index
-router.get(':index', (req, res) => {
+router.get('/:index', (req, res) => {
     const {  index } = req.params
-    res.send(Bread[index])
+    res.render('show', {
+        bread: Bread[index]
+    })
 })
+
+
 
 module.exports = router
