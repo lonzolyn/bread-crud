@@ -13,6 +13,14 @@ function Index ({ breads }) {
   return(
     <Default>
       <h2>Index Page</h2>
+      <div className= 'newBotton'>
+           <a href='/breads/new'>
+            <button>
+              Add a new bread
+            </button>
+           </a>
+        
+      </div>
       <ul>
         {display}
       </ul>
