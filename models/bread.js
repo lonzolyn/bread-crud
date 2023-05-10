@@ -10,7 +10,7 @@ const breadSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: 'https:/thumbs.dreamstime.com/b/breads-cut-14027607.jpg'
+    default: 'https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg'
   }
 })
 module.exports = mongoose.model('Bread', breadSchema)
